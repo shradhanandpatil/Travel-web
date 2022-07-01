@@ -1,0 +1,692 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;0,700;1,200;1,400&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+/* ################################## html elements styel ############################### */
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+
+ul li{
+    list-style: none;
+}
+
+a{
+    font-size: 1.6rem;
+    text-decoration: none;
+}
+
+p,li{
+    font-size: 1.6rem;
+    margin-bottom: 0.5em;
+    letter-spacing: 0.15em;
+}
+
+h1,h2,h3{
+    margin-bottom: 0.5em;
+    letter-spacing: 0.5em;
+    font-weight: 500;
+}
+
+/* ######################## util class ##################################### */
+
+.containar{
+    max-width: 1000px;
+    width: 65%;
+    margin: 0 auto;
+    border: 2px sloid red;
+    position: relative;
+
+}
+
+.lg_heading{
+    font-size: 3.5rem;
+}
+
+.md_heading{
+    font-size: 2.5rem;
+}
+
+.text_red{
+    color: #e63946;
+}
+
+.text_black{
+    color: #333;
+}
+
+.text_white{
+    color: #f4f4f4;
+}
+
+.text_grey{
+    color: #555;
+}
+
+.bg-black{
+    background-color: #263238;
+}
+
+.btn{
+    
+    display: inline-block;
+    padding: 0.5em 1.5em;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin: 0.5em 0;
+}
+
+.btn-large{
+      background-color: white; 
+      border-radius: 100px;    
+}
+
+.btn-small{
+    border: 2px solid #e63946;
+    color: #e63946;
+    background-color: white;
+    border-radius: 1.5em;
+}
+
+.btn-large:hover{
+    background-color: #ddd;
+}
+
+.btn-small:hover{
+    background-color: #ddd;
+}
+
+
+
+
+/* ########################### haeder styeling ######################## */
+
+
+.header{
+    position: relative;
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5) ),url(../img/header-image.jpg);
+    height: 95vh;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+}
+
+.navbar{
+   
+    padding: 1rem;
+}
+
+
+.header .logo{
+    float: left;
+    font-size: 3.5rem;
+    margin-top: 1em;
+    /* border-bottom: 2px solid white; */
+}
+.header .logo:hover{ 
+     box-shadow: 0px 0px 20px 20px  rgba(247, 247, 236, 0.699);
+}
+.navbar .nav_iteams{
+    float: right;
+    margin-top: 0.1rem;
+    
+}
+
+.navbar .nav_iteam{
+    display: inline-block;
+    padding: 1em;
+}
+
+.navbar a:link,
+.navbar a:visited{
+    color: #f4f4f4;
+}
+
+.navbar a:hover{
+    border-bottom: 1px solid white;
+}
+
+
+
+.navbar::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+/* ########################heder contain styel##################  */
+.header .header-contain h1{
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 0.5em;
+
+}
+
+.header .header-contain p{
+    font-weight: 500;
+    text-transform: uppercase;
+    padding: 0.5em;
+}
+
+.header .header-contain{
+    background: linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.1));
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform:translate(-50%,-50%);
+    text-align: center;
+
+}
+
+/* ################## show case style ################  */
+
+.showcase{
+    background-color: #ddd;
+    padding: 10rem 0;
+}
+
+.row{
+    height: 300px;
+    background-color: white;
+    box-shadow:0px 0px 20px 0px  rgba(0, 0, 0, 0.233);
+}
+
+.row1{
+    margin-bottom: 8rem;
+}
+
+.row1 .img-box , .row2 .text-box{
+    float: left;
+    width: 50%;
+}
+
+.row2 .img-box , .row1 .text-box{
+    float: right;
+    width: 50%;
+}
+
+.row .img-box{
+    
+    height: 100%;
+}
+
+.row .text-box{
+   
+    padding: 3rem;
+}
+
+.row .img-box img{
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.row::after{
+    contain: "";
+    display: block;
+    clear: both;
+}
+
+/* ################### box table style ##########################  */
+
+.fechares{
+    padding: 10rem 0;
+}
+
+
+.box-table{
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.671);
+}
+
+.box{
+    width: 33.33333333%;
+    float: left;
+    padding: 2em;
+    text-align: center; 
+    
+}
+
+.box-1, .box-3{
+    background-color: #263238;
+    color: white;
+}
+
+.box-2{
+    background-color: #e63946;
+    color: white;
+}
+
+
+.box-table::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+/* ################# footer style ######################  */
+
+.footer{
+    background-color: #263238;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+    position: relative;
+}
+
+.socieal-media-icon i{
+    margin: 0.5em;
+}
+
+.footer .socieal-media-icon a{
+    color: white;
+    /* border: 1px solid white; */
+    display: block;
+    position: absolute;
+    float: left;
+    margin-top: 2px;
+}
+
+/* ########################## about section style ##################  */
+
+.about{
+    padding: 5rem 0;
+}
+
+.border-heading::after{
+    content: "";
+    display: block;
+    border: 3px solid #e63946;
+    width: 100%;
+}
+
+.ul-contane{
+    margin-top: 2rem;
+    text-align: center;
+
+}
+
+.about .ul-right{
+    float: left;
+    width: 50%;
+}
+
+.about .ul-left{
+    float: right;
+    width: 50%;
+}
+
+.about .ul-contane::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.ul-contane li::before{
+    content: '\2713';
+    color: #e63946;
+    font-weight: bold;
+    padding-right: 1rem;
+}
+
+/* ####################### cont style #####################  */
+
+.cont{
+    
+    margin-top: 5rem;
+}
+
+.cont-team{
+    float: left;
+   
+    width: 25%;
+    text-align: center;
+}
+
+.cont-team span{
+    font-size: 3rem;
+    font-weight: 700;
+    color: #e63946;
+}
+
+.cont-team p{
+    color: #263238;
+    font-weight: 700;
+}
+
+.cont::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+
+/* ########################### aout foteer line ###################  */
+
+.about-footer{
+    padding: 1rem;
+    background-color: #e63946;
+    margin-top: 8rem;
+}
+
+.about-footer .about-footer-line{
+    float: left;
+    width: 60%;
+}
+
+.about-footer .about-footer-btn{
+    float: right;
+    width: 40%;
+    text-align: right;
+}
+
+.about-footer-btn a{
+    text-align: center;
+    display: inline-block;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 2em;
+    border: 4px solid white;
+    padding: 0.3em 2.5em;
+    letter-spacing: 0.5rem;
+    color: white;
+
+}
+
+.about-footer-line{
+    text-transform: uppercase;
+    color: white;
+    font-size: 2rem;
+    font-weight: 700;
+    text-align: left;
+}
+
+.about-footer::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+
+/* ############################ contact form style ###########################  */
+
+.contact-form{
+    padding: 5rem 0;
+    background:#f7f7f7;
+}
+
+.form-contain{
+    
+}
+
+.form-contain .company-address{
+    background: #fff;
+    height: 760px;
+    float: left;
+    width: 49%;
+    padding: 1rem;
+}
+
+.company-address i{
+    display: inline-block;
+    margin-right: 1rem;
+}
+
+.company-address h2{
+    display: inline-block;
+    text-transform: uppercase;
+}
+
+.form-contain .addres-gruop{
+    margin-bottom: 3rem;
+}
+
+.form-contain .company-address img{
+    max-width: 90%;
+    min-height: 40rem;
+    object-fit: cover;
+    object-position: right;
+}
+
+.form-contain::after{
+    content:'';
+    display: block;
+    clear: both;
+}
+
+/* ################### form style ####################### */
+
+.form-contain .form{
+    height: 660px;
+    font-size: 1.6rem;
+    background: #fff;
+    
+    float: right;
+    width: 49%;
+    padding: 1rem;
+}
+
+.form h1::after{
+    content: '';
+    display: block;
+    border-bottom: 3px solid #e63946;
+    width: 100%;
+}
+
+.form-contain .form input{
+    display: block;
+    width: 100%;
+    padding: 0.5rem;
+}
+
+.form-contain .form label{
+    display: block;
+    width: 100%;
+}
+
+.form-contain .form .form-gruop{
+    margin-bottom: 1.2rem;
+}
+
+.form-contain .form label::after{
+    content: '* ';
+    color: red;
+}
+
+.form-contain .form textarea{
+    width: 100%;
+    height: 300px;
+    padding: 1rem;
+}
+
+.form-btn{
+    display: block;
+    margin:0 auto;
+    padding: 0.5em 3em;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    color: white;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    background: #e63946;
+    margin-top: 1em;
+}
+
+/* #################### media query styel ##############################  */
+
+@media (max-width: 500px){
+    html{
+        font-size: 50%;
+
+    }
+
+    .navbar .nav_iteams, .navbar .logo{
+        float: none;
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+
+    .header-contain h1{
+        display: none;
+    }
+
+    .header-contain p{
+        font-size: 1.2rem;
+    }
+
+    .md_heading{
+        font-size: 2rem;
+    }
+
+    .lg_heading{
+        font-size: 3rem;
+    }
+
+    .row{
+        height: auto;
+        width: 100%;
+    }
+
+    .row .img-box,
+    .row .text-box{
+        float: none;
+        width: 100%;
+        text-align: center;
+    }
+
+    .fechares .box{
+        float: none;
+        width: 100%;
+        text-align: center;
+    }
+    .ul-contane .ul-right,
+    .ul-contane .ul-left{
+        float: none;
+        width: 100%;   
+    }
+
+    .cont-team span{
+        font-size: 2rem;
+    }
+
+    .cont-team p{
+        font-size: 1.3rem;
+    }
+
+    .about-footer .about-footer-line,
+    .about-footer .about-footer-btn{
+        float: none;
+        width: 100%;
+        text-align: center;
+    }
+    
+    .form-contain .company-address{
+        float: none;
+        height: auto;
+        width: 100%;
+        margin: 5rem;
+    }
+
+    .form-contain .form{
+        float: none;
+        height: auto;
+        width: 100%;
+
+    }
+}
+
+@media(min-width: 501px) and (max-width: 780px){
+
+    html{
+        font-size: 50%;
+
+    }
+
+    .navbar .nav_iteams, .navbar .logo{
+        float: none;
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+
+    p{
+        font-size: 1.8rem;
+    }
+
+    .row{
+        height: auto;
+        width: 100%;
+
+    }
+
+    .row .img-box,
+    .row .text-box{
+        float: none;
+        width: 100%;
+        text-align: center;
+    }
+
+    .fechares .box{
+        float: none;
+        width: 100%;
+        text-align: center;
+    }
+
+    .about-footer .about-footer-line,
+    .about-footer .about-footer-btn{
+        float: none;
+        width: 100%;
+        text-align: center;
+    }
+    
+    .form-contain .company-address{
+        float: none;
+        height: auto;
+        width: 100%;
+        margin: 5rem;
+    }
+
+    .form-contain .form{
+        float: none;
+        height: auto;
+        width: 100%;
+    }
+
+}
+
+@media(min-width: 781px) and (max-width: 1200px){
+    html{
+        font-size: 56.25%;
+    }
+}
+
+@media(orientation:landscape) and (max-height:500px){
+    .header{
+        height: 90vmax;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
